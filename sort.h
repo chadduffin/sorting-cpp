@@ -4,10 +4,13 @@
 class Sort {
   public:
     static void MergeSort(int *list, int len);
+    static void QuickSort(int *list, int len);
 
   private:
     static void Merge(int *list, int begin, int middle, int end);
     static void Partition(int *list, int begin, int end);
+
+    static void PivotAndSort(int *list, int begin, int end);
 };
 
 #endif /* SORT */

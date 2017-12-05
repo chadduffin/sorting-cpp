@@ -3,9 +3,9 @@
 #include <iostream>
 
 int main(int argc, char **argv) {
-  int array[10] = {1, 5, 3, 7, 2, 9, 10, 4, 6, 8};
+  int array[10] = {6, 2, 8, 5, 7, 1, 4, 3, 10, 9};
 
-  Sort::MergeSort(array, 10);
+  Sort::QuickSort(array, 10);
 
   for (int i = 0; i < 10; i++) {
     std::cout << array[i] << " ";
